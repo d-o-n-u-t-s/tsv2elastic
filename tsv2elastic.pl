@@ -9,7 +9,7 @@ use Getopt::Long;
 use Search::Elasticsearch;
 
 # hostname or IP address of the host to use for Elasticsearch
-my $NODE = ''10.2.0.50:9200';
+my $NODE = 'localhost:9200';
 my %opts;
 Getopt::Long::GetOptions(\%opts, qw( primary=s index=s type=s verbose) );
 my $es = Search::Elasticsearch->new(node => $NODE);
