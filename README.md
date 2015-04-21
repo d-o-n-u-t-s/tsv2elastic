@@ -2,6 +2,13 @@
 
 This perl script will easy get contents from a MySQL database into Elasticsearch.
 
+### Setup
+
+Please change hostname or IP address of the host to use for Elasticsearch.
+```
+my $NODE = 'localhost:9200';
+```
+
 ### Usage
 
 easy import with mysql client.
